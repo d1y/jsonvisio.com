@@ -155,7 +155,7 @@ export const Sidebar: React.FC = () => {
             </StyledLogo>
           </StyledElement>
         </Link>
-        <Tooltip title="Import File">
+        <Tooltip title="导入文件">
           <StyledElement>
             <StyledImportFile>
               <input
@@ -168,14 +168,14 @@ export const Sidebar: React.FC = () => {
             </StyledImportFile>
           </StyledElement>
         </Tooltip>
-        <Tooltip title="Rotate Layout">
+        <Tooltip title="旋转布局">
           <StyledElement
             onClick={() => dispatch({ type: ConfigActionType.TOGGLE_LAYOUT })}
           >
             <StyledFlowIcon rotate={rotateLayout(settings.layout)} />
           </StyledElement>
         </Tooltip>
-        <Tooltip title={settings.expand ? "Shrink Nodes" : "Expand Nodes"}>
+        <Tooltip title={settings.expand ? "收缩节点" : "展开节点"}>
           <StyledElement
             title="Toggle Expand/Collapse"
             onClick={toggleExpandCollapse}
@@ -183,12 +183,12 @@ export const Sidebar: React.FC = () => {
             {settings.expand ? <CgArrowsMergeAltH /> : <CgArrowsShrinkH />}
           </StyledElement>
         </Tooltip>
-        <Tooltip title="Clear JSON">
+        <Tooltip title="清除JSON">
           <StyledElement onClick={handleClear}>
             <AiOutlineDelete />
           </StyledElement>
         </Tooltip>
-        <Tooltip title="Save JSON">
+        <Tooltip title="保存JSON">
           <StyledElement onClick={handleSave}>
             <AiOutlineSave />
           </StyledElement>

@@ -78,7 +78,7 @@ export const ErrorContainer: React.FC<ErrorContainerProps> = ({
           ) : (
             <MdOutlineCheckCircleOutline size={20} />
           )}
-          {error.message ? "Error" : "JSON Valid"}
+          {error.message ? "解析失败" : "解析成功"}
         </StyledTitle>
         {error.message &&
           (error.isExpanded ? (

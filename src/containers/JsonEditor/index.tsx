@@ -67,7 +67,7 @@ export const JsonEditor: React.FC = () => {
         value={value}
         theme={editorTheme}
         options={editorOptions}
-        loading={<Loading message="Loading Editor..." />}
+        loading={<Loading message="加载中" />}
         onChange={(value) => setValue(value as string)}
       />
     </StyledEditorWrapper>
